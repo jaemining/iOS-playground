@@ -25,6 +25,9 @@
                                 <rect key="frame" x="135.5" y="269" width="49" height="30"/>
                                 <color key="backgroundColor" red="0.9727348732276534" green="1" blue="0.72527880509698806" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QVH-vI-Nf7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
