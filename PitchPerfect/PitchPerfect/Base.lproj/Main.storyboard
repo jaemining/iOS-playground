@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,28 +18,48 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uf9-1r-X5V">
-                                <rect key="frame" x="135.5" y="269" width="49" height="30"/>
+                                <rect key="frame" x="163" y="318.5" width="49" height="30"/>
                                 <color key="backgroundColor" red="0.9727348732276534" green="1" blue="0.72527880509698806" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Record"/>
                                 <connections>
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QVH-vI-Nf7"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60n-Vt-Pjj">
+                                <rect key="frame" x="136.5" y="368" width="102.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aO-GW-m6S">
+                                <rect key="frame" x="136.5" y="408" width="102" height="30"/>
+                                <state key="normal" title="Stop recording"/>
+                                <connections>
+                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E8g-Sw-nRy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="60n-Vt-Pjj" firstAttribute="centerX" secondItem="Uf9-1r-X5V" secondAttribute="centerX" id="OrI-NJ-Oug"/>
                             <constraint firstItem="Uf9-1r-X5V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W3O-4T-Jdk"/>
+                            <constraint firstItem="1aO-GW-m6S" firstAttribute="centerX" secondItem="60n-Vt-Pjj" secondAttribute="centerX" id="YLY-iu-uwr"/>
+                            <constraint firstItem="60n-Vt-Pjj" firstAttribute="top" secondItem="Uf9-1r-X5V" secondAttribute="bottom" constant="19.5" id="gNq-Pq-rJh"/>
                             <constraint firstItem="Uf9-1r-X5V" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="msq-XI-mun"/>
+                            <constraint firstItem="1aO-GW-m6S" firstAttribute="top" secondItem="60n-Vt-Pjj" secondAttribute="bottom" constant="19" id="uw7-7f-gif"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="recordingLabel" destination="60n-Vt-Pjj" id="YMw-ML-yGc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+            <point key="canvasLocation" x="116.25" y="122.53521126760563"/>
         </scene>
     </scenes>
 </document>
