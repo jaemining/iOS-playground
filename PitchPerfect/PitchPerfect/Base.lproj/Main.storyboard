@@ -100,10 +100,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doi-8X-Qtm" userLabel="SlowButton">
                                                         <rect key="frame" x="0.0" y="0.0" width="187" height="196"/>
                                                         <state key="normal" image="Slow"/>
+                                                        <connections>
+                                                            <action selector="playSoundForButton:" destination="m1j-Mq-Ja5" eventType="touchUpInside" id="xMX-E2-A2i"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POH-kB-nMH" userLabel="FastButton">
                                                         <rect key="frame" x="187" y="0.0" width="187" height="196"/>
                                                         <state key="normal" image="Fast"/>
+                                                        <connections>
+                                                            <action selector="playSoundForButton:" destination="m1j-Mq-Ja5" eventType="touchUpInside" id="7im-Nq-l3e"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -113,10 +119,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neJ-xI-4wn" userLabel="HighPitchButton">
                                                         <rect key="frame" x="0.0" y="0.0" width="187" height="196"/>
                                                         <state key="normal" image="HighPitch"/>
+                                                        <connections>
+                                                            <action selector="playSoundForButton:" destination="m1j-Mq-Ja5" eventType="touchUpInside" id="eTW-gq-oXl"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMB-UU-Ql1" userLabel="LowPitchButton">
                                                         <rect key="frame" x="187" y="0.0" width="187" height="196"/>
                                                         <state key="normal" image="LowPitch"/>
+                                                        <connections>
+                                                            <action selector="playSoundForButton:" destination="m1j-Mq-Ja5" eventType="touchUpInside" id="b7y-Mn-vCP"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -126,10 +138,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15Z-cu-08d" userLabel="EchoButton">
                                                         <rect key="frame" x="0.0" y="0.0" width="187" height="196"/>
                                                         <state key="normal" image="Echo"/>
+                                                        <connections>
+                                                            <action selector="playSoundForButton:" destination="m1j-Mq-Ja5" eventType="touchUpInside" id="QAB-uZ-drR"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huF-N0-2PI" userLabel="ReverbButton">
                                                         <rect key="frame" x="187" y="0.0" width="187" height="196"/>
                                                         <state key="normal" image="Reverb"/>
+                                                        <connections>
+                                                            <action selector="playSoundForButton:" destination="m1j-Mq-Ja5" eventType="touchUpInside" id="6oJ-w6-cN4"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -144,12 +162,13 @@
                                                     <constraint firstAttribute="width" constant="64" id="xJf-pF-7jZ"/>
                                                 </constraints>
                                                 <state key="normal" image="Stop"/>
+                                                <connections>
+                                                    <action selector="stopButtonPressed:" destination="m1j-Mq-Ja5" eventType="touchUpInside" id="ogw-bt-rrg"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="u4c-P0-FB7" firstAttribute="centerY" secondItem="x9c-zm-N5e" secondAttribute="centerY" id="WY8-Ng-UrD"/>
                                             <constraint firstAttribute="height" constant="64" id="cYk-sp-zqf"/>
-                                            <constraint firstItem="u4c-P0-FB7" firstAttribute="centerX" secondItem="x9c-zm-N5e" secondAttribute="centerX" id="xKG-fx-HfF"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -163,6 +182,15 @@
                             <constraint firstAttribute="trailingMargin" secondItem="bS2-GV-7uE" secondAttribute="trailing" id="qLX-YX-oxh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="echoButton" destination="15Z-cu-08d" id="uxa-vZ-h0o"/>
+                        <outlet property="fastButton" destination="POH-kB-nMH" id="lIl-bk-o5e"/>
+                        <outlet property="highPitchButton" destination="neJ-xI-4wn" id="1r3-2h-h2E"/>
+                        <outlet property="lowPitchButton" destination="FMB-UU-Ql1" id="ANJ-jr-LOe"/>
+                        <outlet property="reverbButton" destination="huF-N0-2PI" id="k4K-To-f3X"/>
+                        <outlet property="slowButton" destination="doi-8X-Qtm" id="1fI-AX-ya2"/>
+                        <outlet property="stopButton" destination="u4c-P0-FB7" id="nYa-3d-vh5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M02-ie-XuM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
