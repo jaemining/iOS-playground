@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -86,7 +87,33 @@
                     <view key="view" contentMode="scaleToFill" id="0sO-tt-Sim">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.99598820771866448" green="1" blue="0.56662789595610041" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sD4-tv-IMd">
+                                <rect key="frame" x="20" y="64" width="374" height="672"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PFl-NN-j75">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="672"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doi-8X-Qtm" userLabel="Slow Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="672"/>
+                                                <state key="normal" image="Slow"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POH-kB-nMH" userLabel="Fast Button">
+                                                <rect key="frame" x="187" y="0.0" width="187" height="672"/>
+                                                <state key="normal" image="Fast"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sD4-tv-IMd" firstAttribute="leading" secondItem="0sO-tt-Sim" secondAttribute="leadingMargin" id="4If-8g-eXg"/>
+                            <constraint firstItem="Y9e-gD-hes" firstAttribute="top" secondItem="sD4-tv-IMd" secondAttribute="bottom" id="S59-DN-oZf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sD4-tv-IMd" secondAttribute="trailing" id="heJ-a6-IbH"/>
+                            <constraint firstItem="sD4-tv-IMd" firstAttribute="top" secondItem="A6k-Jg-CSa" secondAttribute="bottom" id="nF8-oo-UXH"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M02-ie-XuM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -113,7 +140,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Fast" width="90" height="90"/>
         <image name="RecordButton" width="155" height="155"/>
+        <image name="Slow" width="90" height="90"/>
         <image name="Stop" width="155" height="155"/>
     </resources>
 </document>
