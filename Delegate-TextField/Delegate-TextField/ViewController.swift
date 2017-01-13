@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
+//class ViewController: UIViewController {
 
     @IBOutlet var tf: UITextField!
     
@@ -51,6 +52,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     /**
      * 델리게이트 메소드 추가
      */
+    
     // 텍스트 필드의 편집을 시작할 때 호출
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         print("textFieldShouldBeginEditing execute")
@@ -101,5 +103,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         print("텍스트 필드의 편집이 종료되었습니다")
     }
+ 
 }
 

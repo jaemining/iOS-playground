@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					854EE6941E2891BC003AFF70 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KVFUA328CJ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -258,6 +259,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KVFUA328CJ;
 				INFOPLIST_FILE = "Delegate-TextField/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jaemin.Delegate-TextField";
@@ -270,6 +272,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KVFUA328CJ;
 				INFOPLIST_FILE = "Delegate-TextField/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jaemin.Delegate-TextField";
@@ -297,6 +300,7 @@
 				854EE6A91E2891BD003AFF70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
