@@ -38,18 +38,23 @@ class ViewController: UIViewController, UIAlertViewDelegate {
         switch buttonIndex {
         case alertView.cancelButtonIndex :
             self.selectedResult.text = "취소 버튼이 선택되었습니다"
+            self.selectedResult.sizeToFit()
             break
         case 1 :
-            self.selectedResult.text = "선택 A 버튼이 선택되었습니다"
+            self.selectedResult.text = "'선택 A' 버튼이 선택되었습니다"
+            self.selectedResult.sizeToFit()
             break
         case 2 :
             self.selectedResult.text = "선택 B 버튼이 선택되었습니다"
+            self.selectedResult.sizeToFit()
             break
         case 3 :
             self.selectedResult.text = "선택 C 버튼이 선택되었습니다"
+            self.selectedResult.sizeToFit()
             break
         default :
             self.selectedResult.text = "지정되지 않은 버튼이 선택되었습니다"
+            self.selectedResult.sizeToFit()
             break
         }
     }
