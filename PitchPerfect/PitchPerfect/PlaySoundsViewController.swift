@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class PlaySoundsViewController: UIViewController {
+class PlaySoundsViewController: UIViewController, UIDocumentInteractionControllerDelegate {
     
     @IBOutlet weak var slowButton: UIButton!
     @IBOutlet weak var fastButton: UIButton!
@@ -25,6 +25,8 @@ class PlaySoundsViewController: UIViewController {
     var audioPlayerNode: AVAudioPlayerNode!
     var stopTimer: Timer!
     
+    fileprivate var documentController: UIDocumentInteractionController?
+
     enum ButtonType: Int {
         case slow = 0, fast, highPitch, lowPitch, echo, reverb
     }
@@ -64,6 +66,26 @@ class PlaySoundsViewController: UIViewController {
         super.viewWillAppear(animated)
         configureUI(.notPlaying)
     }
+    
+    
+    func shareFile(_ localPath: URL?) {
+        print("local path")
+        print(localPath)
+        
+        if let localPath = localPath {
+            documentController = UIDocumentInteractionController(url: localPath)
+            documentController?.delegate = self
+            documentController?.presentOptionsMenu(from: self.view.frame, in: self.view, animated: true)
+        }
+    }
 
+    @IBAction func share(_ sender: Any) {
+        
+        let path = "\(recordedAudioURL!)"
+        let urlString = "file://"+path
+        let url = URL(string: urlString)
+        
+        shareFile(url)
+    }
 
 }
