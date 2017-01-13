@@ -25,6 +25,9 @@
                                 <rect key="frame" x="136" y="56" width="102" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="이미지 선택"/>
+                                <connections>
+                                    <action selector="pick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s4S-RH-KFQ"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cei-Kh-OMg">
                                 <rect key="frame" x="41" y="100" width="292" height="495"/>
@@ -33,6 +36,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="cei-Kh-OMg" id="ic4-Az-DGr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
