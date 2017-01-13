@@ -104,7 +104,7 @@
                                                             <action selector="playSoundForButton:" destination="m1j-Mq-Ja5" eventType="touchUpInside" id="xMX-E2-A2i"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POH-kB-nMH" userLabel="fastButton">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POH-kB-nMH" userLabel="fastButton">
                                                         <rect key="frame" x="187" y="0.0" width="187" height="175.66666666666666"/>
                                                         <state key="normal" image="Fast"/>
                                                         <connections>
@@ -116,14 +116,14 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="taj-Uc-UBL">
                                                 <rect key="frame" x="0.0" y="175.66666666666669" width="374" height="175.66666666666669"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neJ-xI-4wn" userLabel="highPitchButton">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neJ-xI-4wn" userLabel="highPitchButton">
                                                         <rect key="frame" x="0.0" y="0.0" width="187" height="175.66666666666666"/>
                                                         <state key="normal" image="HighPitch"/>
                                                         <connections>
                                                             <action selector="playSoundForButton:" destination="m1j-Mq-Ja5" eventType="touchUpInside" id="eTW-gq-oXl"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMB-UU-Ql1" userLabel="lowPitchButton">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMB-UU-Ql1" userLabel="lowPitchButton">
                                                         <rect key="frame" x="187" y="0.0" width="187" height="175.66666666666666"/>
                                                         <state key="normal" image="LowPitch"/>
                                                         <connections>
@@ -135,14 +135,14 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="W9p-82-Wki">
                                                 <rect key="frame" x="0.0" y="351.33333333333326" width="374" height="236.66666666666674"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15Z-cu-08d" userLabel="echoButton">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15Z-cu-08d" userLabel="echoButton">
                                                         <rect key="frame" x="0.0" y="0.0" width="187" height="236.66666666666669"/>
                                                         <state key="normal" image="Echo"/>
                                                         <connections>
                                                             <action selector="playSoundForButton:" destination="m1j-Mq-Ja5" eventType="touchUpInside" id="QAB-uZ-drR"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huF-N0-2PI" userLabel="reverbButton">
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huF-N0-2PI" userLabel="reverbButton">
                                                         <rect key="frame" x="187" y="0.0" width="187" height="236.66666666666669"/>
                                                         <state key="normal" image="Reverb"/>
                                                         <connections>
