@@ -67,11 +67,7 @@ class PlaySoundsViewController: UIViewController, UIDocumentInteractionControlle
         configureUI(.notPlaying)
     }
     
-    
     func shareFile(_ localPath: URL?) {
-        print("local path")
-        print(localPath)
-        
         if let localPath = localPath {
             documentController = UIDocumentInteractionController(url: localPath)
             documentController?.delegate = self
@@ -80,9 +76,9 @@ class PlaySoundsViewController: UIViewController, UIDocumentInteractionControlle
     }
 
     @IBAction func share(_ sender: Any) {
-        
+    
         let path = "\(recordedAudioURL!)"
-        let urlString = "file://"+path
+        let urlString = "file://" + path
         let url = URL(string: urlString)
         
         shareFile(url)
