@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var count = 0
-    var label:UILabel!
+    @IBOutlet var label:UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
