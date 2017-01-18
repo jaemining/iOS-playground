@@ -31,7 +31,7 @@
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="rollTheDice" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="MYe-4d-CZX"/>
+                                    <segue destination="qUR-90-axl" kind="modal" identifier="rollDice" id="3mm-V1-aIq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,13 +41,10 @@
                             <constraint firstAttribute="centerY" secondItem="0CI-ro-g3x" secondAttribute="centerY" id="icH-2t-PDN"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="qUR-90-axl" kind="modal" identifier="rollDice" id="QM6-VH-Sht"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="248.53333333333333" y="879.45333333333338"/>
+            <point key="canvasLocation" x="248.5" y="878.5"/>
         </scene>
         <!--Dice View Controller-->
         <scene sceneID="Kym-1j-YxR">
